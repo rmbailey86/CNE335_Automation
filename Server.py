@@ -1,3 +1,7 @@
+import os
+import paramiko
+
+
 class Server:
     """ Server class for representing and manipulating servers. """
 
@@ -7,4 +11,7 @@ class Server:
 
     def ping(self):
         # TODO - Use os module to ping the server
-        return
+        address = self.server_ip
+        check = os.system("ping" + address)
+
+        return check
