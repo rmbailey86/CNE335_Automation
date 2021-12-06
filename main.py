@@ -1,3 +1,4 @@
+# This is the template code for the CNA337 Final Project
 # Rob Bailey, rmbailey@student.rtc.edu
 # Base code template furnished by Zachary Rubin, zrubin@rtc.edu
 # With tutoring from TJ Dewey
@@ -17,4 +18,7 @@ if __name__ == '__main__':
     EC2 = Server("54.188.78.84")
     echo = EC2.ping()
     print(echo)
+    EC2.connect_and_update()
     # TODO - Call Ping method and print the results
+
+    # myEC2.connect()
